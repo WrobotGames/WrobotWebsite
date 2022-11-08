@@ -1,6 +1,6 @@
 <template>
   <div >
-    <AppHeader />
+    <AppHeader/>
     <nuxt/>
   </div>
 </template>
@@ -19,11 +19,9 @@ export default {
   body{
     background: rgb(243, 244, 246);
   }
-  p{
+  p, h1, h2, h3, h4, h5, h6{
     font-family: Arial, Helvetica, sans-serif;
-  }
-  h1{
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(54, 54, 54);
   }
 
   .center {
@@ -56,20 +54,18 @@ export default {
     
   }
 
-  
+/* Page Transitions */
 .page-enter-active,
 .page-leave-active {
-  transition: opacity transfrom 200ms cubic-bezier(.42,0,1,1);
+  transition: opacity filter 600ms cubic-bezier(.42,0,1,1);
 }
 
 .page-leave-active {
   opacity: 0;
-  transform: translate(100px, 0px);
   
 }
 .page-enter{
   opacity: 0;
-  transform: translate(-100px, 0px);
 
 }
 
