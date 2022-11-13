@@ -72,7 +72,7 @@ const togglemenu = () => {
     .header .title {
         font-size: 2rem;
         margin: 0;
-        color: #526488;
+        color: var(--primary);
     }
     .headerlink {
         margin: 0;
@@ -93,15 +93,15 @@ const togglemenu = () => {
         line-height: 30px;
         list-style: none;
         display: inline-block;
-        background: #526488;
+        background: var(--primary);
         color: #fff;
         padding: 0.3rem 1rem;
         margin-left: 0.5rem;
     }
     .header a:hover {
-        color: #526488;
+        color: var(--primary);
         background: #ffffff;
-        box-shadow: 0 0px 5px 5px #5264883c;
+        box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.1);
     }
     .mobiletext{
         display: none;

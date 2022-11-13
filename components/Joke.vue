@@ -13,7 +13,7 @@ export default {
 
 <style>
 .joke {
-  border-top:2px solid rgb(76, 117, 176);
+  border-top:2px solid var(--primary);
   display: flex;
   align-items: center;
   padding: 10px;
@@ -40,7 +40,7 @@ export default {
 
 .joke:hover{
   border-radius: 15px;
-  border-top: 8px solid rgb(76, 117, 176);
+  border-top-width: 8px;
   height: 110px;
   line-height: 20px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);

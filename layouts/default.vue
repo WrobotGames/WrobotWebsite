@@ -2,6 +2,10 @@
   <div >
     <AppHeader/>
     <nuxt/>
+    <footer class="pagecontent">
+      <h3>You have reached the end!</h3>
+      <p>This is such a cool footer, I wonder why there inst anything here.</p>
+    </footer>
   </div>
 </template>
 
@@ -16,13 +20,20 @@ export default {
 </script>
 
 <style>
-  body{
+  :root{
+    --primary: #54749f;
     background: rgb(243, 244, 246);
+  }
+  body{
     margin: 0;
   }
   p, h1, h2, h3, h4, h5, h6{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(54, 54, 54);
+  }
+  h1 {
+    border-left: 3px solid var(--primary);
+    padding-left: 0.5rem;
   }
 
   .center {
@@ -33,7 +44,7 @@ export default {
 
   .pagecontent {
     border-radius: 15px;
-    
+    margin-bottom: 1rem;
     padding: 1rem;
     margin-left: 15%;
     margin-right: 15%;
@@ -56,17 +67,16 @@ export default {
 /* Page Transitions */
 .page-enter-active,
 .page-leave-active {
-  transition: opacity filter 600ms cubic-bezier(.42,0,1,1);
+  transition: opacity 0.3s, transform 0.3s;
 }
 
-.page-leave-active {
+.page-leave-active{
+  transform: scale(1.05, 1);
   opacity: 0;
-  
 }
-.page-enter{
+.page-enter {
+  transform: scale(0.95, 1);
   opacity: 0;
-
 }
-
 
 </style>
