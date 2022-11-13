@@ -18,6 +18,7 @@ export default {
 <style>
   body{
     background: rgb(243, 244, 246);
+    margin: 0;
   }
   p, h1, h2, h3, h4, h5, h6{
     font-family: Arial, Helvetica, sans-serif;
@@ -37,19 +38,17 @@ export default {
     margin-left: 15%;
     margin-right: 15%;
     background: white;
-    transition: all 0.4s cubic-bezier(.24,.07,.27,1);
     border: 1px solid rgb(232, 232, 232);
     
 }
   @media screen and (max-width: 800px) {
     .pagecontent{
-      width: calc(100% - 16px);
+      width: calc(100% - 4rem);
+      margin-inline: 0;
+      padding-inline: 2rem;
       border-left: 0px;
       border-right: 0px;
       border-radius: 0px;
-      margin-left: -8px;
-      margin-right: -8px;
-      
     }
     
   }

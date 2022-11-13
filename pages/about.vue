@@ -10,12 +10,12 @@
 export default {
  head(){
     return {
-        title: 'About',
+        title: 'About the Website - Wrobot',
         meta: [
             {
                 hid: 'description',
                 name: 'description',
-                content: 'Best funny dad jokes'
+                content: 'A short about on my website, there really isnt anything here.'
             }
         ]
     }

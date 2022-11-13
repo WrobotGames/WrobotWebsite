@@ -1,11 +1,14 @@
 <template>
 <div> 
-    <img class="nasa" src="/fog.jpg" alt="Image from space">
+    <img class="nasa" src="/fog.jpg" alt="Header Image">
     <div class= "headerbox">
         <header class="header">
-            <h1 class="title">Wrobot</h1>
+            <h2 class="title">Wrobot</h2>
             <!--<button class="mobile_toggle" @click="togglemenu"></button>-->
             <ul class="headerlink">
+                <li >
+                    <h2 class="mobiletext">Menu</h2>
+                </li>
                 <li>
                     <nuxt-link to="/">Home</nuxt-link>
                 </li>
@@ -43,31 +46,31 @@ const togglemenu = () => {
     .nasa {
         object-fit: cover;
         display: block;
-        margin-left: -8px;
-        margin-top: -8px;
-        margin-right: -8px;
+        margin: 0px;
         margin-bottom: 1rem;
-        width: calc(100% + 16px);
+        width: 100%;
         height: 158px;
     }
     .headerbox {
         z-index: 999;
-        width: calc(100% - 16px );
         position: fixed;
-        background: rgba(255, 255, 255, 0.8);
-        top: 1rem;
+        background: rgba(255, 255, 255, 0.7);
+        top: 0.75rem;
+        left: 0.75rem;
+        right: 0.75rem;
         border-radius: 15px;
         box-shadow: 0 3px 10px rgba(0,0,0,0.15), 0 1px 4px rgba(0,0,0,0.24);
-        backdrop-filter: blur(1rem);
+        backdrop-filter: blur(0.5rem);
     }
     .header {
         list-style: none;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem;
+        padding: 0.75rem;
     }
     .header .title {
+        font-size: 2rem;
         margin: 0;
         color: #526488;
     }
@@ -96,32 +99,55 @@ const togglemenu = () => {
         margin-left: 0.5rem;
     }
     .header a:hover {
-        
-        background: #6b82b0;
-        box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+        color: #526488;
+        background: #ffffff;
+        box-shadow: 0 0px 5px 5px #5264883c;
     }
+    .mobiletext{
+        display: none;
+    }
+
+
+    
     @media (max-width:500px) {
         .header{ 
             flex-direction: column;
             align-items: flex-start;
         }
         .headerlink{
-            padding: 0;
-            flex-wrap:nowrap;
-            width: 100%;
-            margin-top: 0.5rem;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: flex-start;
+                position: fixed;
+                right: -0.75rem;
+                top: 0;
+                padding: 0;
+                width:200px;
+                height: calc(100vh - 1.5rem);
+                background: rgba(256, 256, 256, 0.742);
+                backdrop-filter: blur(10px);
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                box-shadow: 0 3px 10px rgba(0,0,0,0.15), 0 1px 4px rgba(0,0,0,0.24);
 
         }
 
         .headerlink a {
             box-shadow: 0 3px 10px rgba(0,0,0,0.15), 0 1px 4px rgba(0,0,0,0.24);
-
-            max-width: 200px;
-            width: 50px;
+            width: calc(200px - 2rem);
+            padding: 0;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
             margin: 0;
-            padding-inline: 0.5rem;
-            font-size: 15px;
+            margin-top: 1rem;
+        }
+        .mobiletext{
+            text-align: center;
+            width: calc(200px - 2rem);
+            display: block;
+            margin: 0;
+            margin-top: 1rem;
+            padding: 0;
+            height: auto;
         }
         
         /*

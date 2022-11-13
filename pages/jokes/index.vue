@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="pagecontent">
+        <h1>The Bad Dad Joke List</h1>
         <p >Here is a list of bad jokes, just to test on how to make a website.</p>
     </div>
     
@@ -37,12 +38,12 @@ export default {
     },
     head(){
         return {
-            title: 'Jokes',
+            title: 'Dad Jokes - Wrobot',
             meta: [
                 {
                     hid: 'description',
                     name: 'description',
-                    content: 'Best funny dad jokes'
+                    content: 'Here is a list of bad dad jokes, just to test on how to make a website.'
                 }
             ]
         }

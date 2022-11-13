@@ -31,8 +31,8 @@ export default {
 }
 @media screen and (max-width: 800px) {
     .joke{
-      margin-left: 0%;
-      margin-right: 0%;
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
     }
     
   }

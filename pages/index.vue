@@ -1,6 +1,6 @@
 <template>
 <div class='pagecontent'>
-  <h1 >Welcome to <span class="pagetitlewr">Wrobot.ga</span></h1>
+  <h1 >Welcome to Wrobot.ga</h1>
   <p>Here you may stuble uppon some of my web-related projects. </p>
   <p>Also, how did you get here?</p>
   </div>
@@ -8,7 +8,19 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+ head(){
+    return {
+        title: 'Wrobot Home - Wrobot',
+        meta: [
+            {
+                hid: 'description',
+                name: 'description',
+                content: 'Welcome to wrobot.ga, there really isnt anything here.'
+            }
+        ]
+    }
+ }
+
 }
 </script>
 
