@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import Joke from '../../components/Joke'
 export default {
   components: { Joke },
@@ -28,9 +27,12 @@ export default {
         }
         try{
 
-        
-        const res = await axios.get('https://icanhazdadjoke.com/search', config);
-        this.jokes = res.data.results;
+        console.log(useFetch("https://icanhazdadjoke.com/search", {
+            headers: {'Accept': 'application/json'}
+        }).data._rawValue.results)
+        this.jokes = useFetch("https://icanhazdadjoke.com/search", {
+            headers: {'Accept': 'application/json'}
+        }).data._rawValue.results
         }catch(err){
             console.log(err);
         }
