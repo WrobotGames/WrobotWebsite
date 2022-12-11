@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <main>
     <div class="pagecontent">
         <h1>The Bad Dad Joke List</h1>
         <p >This is me testing website API's, it seems to work well.</p>
     </div>
     
     <joke v-for="joke in jokes" :key="joke.id" :id="joke.id" :joke="joke.joke"/>
-  </div>
+  </main>
 </template>
 
 <script>
