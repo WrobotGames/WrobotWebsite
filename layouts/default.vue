@@ -1,7 +1,7 @@
 <template>
   <div >
     <AppHeader/>
-    <nuxt/>
+    <slot />
     <footer class="pagecontent">
       <h3>You have reached the end!</h3>
       <p>This is such a cool footer, I wonder why there inst anything here.</p>
@@ -70,11 +70,11 @@ export default {
   transition: opacity 0.3s, transform 0.3s;
 }
 
-.page-leave-active{
+.page-leave-to{
   transform: scale(1.05, 1);
   opacity: 0;
 }
-.page-enter {
+.page-enter-from {
   transform: scale(0.95, 1);
   opacity: 0;
 }

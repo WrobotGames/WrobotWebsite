@@ -19,7 +19,7 @@
                     <nuxt-link to="/about">About</nuxt-link>
                 </li>
                 <li>
-                    <a href="https://wrobot.ga/godot">Godot</a>
+                    <a href="/godot">Godot</a>
                 </li>
             </ul>
         </header>
