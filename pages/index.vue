@@ -1,23 +1,16 @@
 <template>
 <main class='pagecontent'>
-    <h1 >Welcome to Wrobot.ga</h1> 
+    <h1>Hobbyist dev, not sure why.</h1> 
 </main>
 </template>
 
-<script>
-export default {
- head(){
-    return {
-        title: 'Welcome to Wrobot.ga - Wrobot',
-        meta: [
-            {
-                hid: 'description',
-                name: 'description',
-                content: 'Welcome to my wonderful website, I hope there is anything usefull here.'
-            }
-        ]
-    }
- }
-}
-</script>
 
+<script setup>
+useHead({
+  title: 'Wrobot Homepage - Wrobot.nl.eu.org',
+  meta: [{
+    name: 'description',
+    content: 'If you are seeing this, maybe I should have typed something here.'
+  }]
+})
+</script>

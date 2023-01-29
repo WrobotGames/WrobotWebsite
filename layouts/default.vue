@@ -4,7 +4,7 @@
     <slot />
     <footer class="pagecontent">
       <h3>You have reached the end!</h3>
-      <p>This is such a cool footer, I wonder why there inst anything here.</p>
+      <p>(or the page is just really short)</p>
     </footer>
   </div>
 </template>

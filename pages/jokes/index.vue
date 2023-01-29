@@ -35,20 +35,18 @@ export default {
             console.log(err);
         }
 
-    },
-    head(){
-        return {
-            title: 'Dad Jokes - Wrobot',
-            meta: [
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content: 'Here is a list of bad dad jokes, just to test on how to make a website.'
-                }
-            ]
-        }
- }
+    }
 }
+</script>
+
+<script setup>
+useHead({
+  title: 'Bad Dad Jokes - Wrobot',
+  meta: [{
+    name: 'description',
+    content: 'If you are seeing this, maybe I should have typed something here.'
+  }]
+})
 </script>
 
 <style>
