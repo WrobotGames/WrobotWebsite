@@ -26,31 +26,27 @@ export default {
             }
         }
         try{
+        const res = await useFetch("https://icanhazdadjoke.com/search", {
+            headers: {'Accept': 'application/json'}
+        });
 
-        console.log(useFetch("https://icanhazdadjoke.com/search", {
-            headers: {'Accept': 'application/json'}
-        }).data._rawValue.results)
-        this.jokes = useFetch("https://icanhazdadjoke.com/search", {
-            headers: {'Accept': 'application/json'}
-        }).data._rawValue.results
+        this.jokes = res.data._rawValue.results
         }catch(err){
             console.log(err);
         }
 
-    },
-    head(){
-        return {
-            title: 'Dad Jokes - Wrobot',
-            meta: [
-                {
-                    hid: 'description',
-                    name: 'description',
-                    content: 'Here is a list of bad dad jokes, just to test on how to make a website.'
-                }
-            ]
-        }
- }
+    }
 }
+</script>
+
+<script setup>
+useHead({
+  title: 'Bad Dad Jokes - Wrobot',
+  meta: [{
+    name: 'description',
+    content: 'If you are seeing this, maybe I should have typed something here.'
+  }]
+})
 </script>
 
 <style>

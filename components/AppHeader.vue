@@ -54,13 +54,12 @@ const togglemenu = () => {
     .headerbox {
         z-index: 999;
         position: fixed;
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.9);
         top: 0.75rem;
         left: 0.75rem;
         right: 0.75rem;
         border-radius: 15px;
         box-shadow: 0 3px 10px rgba(0,0,0,0.15), 0 1px 4px rgba(0,0,0,0.24);
-        backdrop-filter: blur(0.5rem);
     }
     .header {
         list-style: none;
@@ -118,13 +117,12 @@ const togglemenu = () => {
             flex-direction: column;
             justify-content: flex-start;
                 position: fixed;
-                right: -0.75rem;
-                top: 0;
+                right: 0rem;
+                top: 0.75rem;
                 padding: 0;
                 width:200px;
                 height: calc(100vh - 1.5rem);
-                background: rgba(256, 256, 256, 0.742);
-                backdrop-filter: blur(10px);
+                background: rgba(256, 256, 256, 1);
                 border-top-left-radius: 15px;
                 border-bottom-left-radius: 15px;
                 box-shadow: 0 3px 10px rgba(0,0,0,0.15), 0 1px 4px rgba(0,0,0,0.24);
