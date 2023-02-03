@@ -1,6 +1,7 @@
 <template>
 <main class='pagecontent'>
-    <h1>Hobbyist dev, not sure why.</h1> 
+    <h1>I do not know why I have made this.</h1> 
+    <p>Don't expect anything amazing here. The coolest thing on this website is by far the godot uit demo that I've made in February of 2022</p>
 </main>
 </template>
 
@@ -14,3 +15,4 @@ useHead({
   }]
 })
 </script>
+
