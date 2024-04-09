@@ -1,14 +1,10 @@
 <template>
 <div> 
-    <img class="nasa" src="/fog.jpg" alt="Header Image">
+    <img class="headerimg" src="/banner.avif" alt="Header Image">
     <div class= "headerbox">
         <header class="header">
             <h2 class="title">Wrobot</h2>
-            <!--<button class="mobile_toggle" @click="togglemenu"></button>-->
             <ul class="headerlink">
-                <li >
-                    <h2 class="mobiletext">Menu</h2>
-                </li>
                 <li>
                     <nuxt-link to="/">Home</nuxt-link>
                 </li>
@@ -43,13 +39,13 @@ const togglemenu = () => {
 <style>
 
 
-    .nasa {
+    .headerimg {
         object-fit: cover;
         display: block;
         margin: 0px;
         margin-bottom: 1rem;
         width: 100%;
-        height: 158px;
+        height: 200px;
     }
     .headerbox {
         z-index: 999;
@@ -66,11 +62,14 @@ const togglemenu = () => {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0.75rem;
+        padding: 0.5rem;
+        padding-bottom: 0rem;
     }
     .header .title {
         font-size: 2rem;
-        margin: 0;
+        line-height: 0.1rem;
+        margin-top: 1rem;
+        font-weight: 900;
         color: var(--primary);
     }
     .headerlink {
@@ -80,13 +79,9 @@ const togglemenu = () => {
         display: flex;
         align-items: center;
     }
-    .mobile_toggle{
-        display: none;
-    }
     .header a {
-        font-family: Arial, Helvetica, sans-serif;
         text-decoration: none;
-        transition: all 0.4s cubic-bezier(.24,.07,.27,1);
+        transition: all 0.2s cubic-bezier(.24,.07,.27,1);
         border-radius: 10px;
         text-align: center;
         line-height: 30px;
@@ -96,75 +91,28 @@ const togglemenu = () => {
         color: #fff;
         padding: 0.3rem 1rem;
         margin-left: 0.5rem;
+        box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.5);
     }
     .header a:hover {
-        color: var(--primary);
-        background: #ffffff;
-        box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.398);
     }
-    .mobiletext{
-        display: none;
+    .header ul{
+        margin:0px;
+        padding:0px;
     }
 
 
     
-    @media (max-width:500px) {
+    @media (max-width:530px) {
         .header{ 
             flex-direction: column;
-            align-items: flex-start;
+            
         }
-        .headerlink{
-            flex-direction: column;
-            justify-content: flex-start;
-                position: fixed;
-                right: 0rem;
-                top: 0.75rem;
-                padding: 0;
-                width:200px;
-                height: calc(100vh - 1.5rem);
-                background: rgba(256, 256, 256, 1);
-                border-top-left-radius: 15px;
-                border-bottom-left-radius: 15px;
-                box-shadow: 0 3px 10px rgba(0,0,0,0.15), 0 1px 4px rgba(0,0,0,0.24);
-
+        .header a{
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+            padding: 0.25rem 0.75rem;
         }
-
-        .headerlink a {
-            box-shadow: 0 3px 10px rgba(0,0,0,0.15), 0 1px 4px rgba(0,0,0,0.24);
-            width: calc(200px - 2rem);
-            padding: 0;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            margin: 0;
-            margin-top: 1rem;
-        }
-        .mobiletext{
-            text-align: center;
-            width: calc(200px - 2rem);
-            display: block;
-            margin: 0;
-            margin-top: 1rem;
-            padding: 0;
-            height: auto;
-        }
-        
-        /*
-        .mobile_toggle{
-            display: block;
-            top: 2rem;
-            right: calc(75px - 1rem);
-            z-index: 9999999;
-            border:0;
-            position: absolute;
-            background: url(/menu.svg);
-            background-repeat: no-repeat;
-            background-size: 2rem;
-            width:2rem;
-            aspect-ratio: 1;
-        }*/
-        
     }
-    
-
 
 </style>

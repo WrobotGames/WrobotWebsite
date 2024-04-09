@@ -2,7 +2,7 @@
   <main>
     <div class="pagecontent">
         <h1>The Bad Dad Joke List</h1>
-        <p >This is me testing website API's, everything seems to work.</p>
+        <p >This page has been made to test how api's work. It has been here since 2022, and I dont think I'm going to remove it.</p>
     </div>
     
     <joke v-for="joke in jokes" :key="joke.id" :id="joke.id" :joke="joke.joke"/>

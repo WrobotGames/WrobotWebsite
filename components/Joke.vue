@@ -28,6 +28,7 @@ export default {
   transition: all 0.4s cubic-bezier(.24,.07,.27,1);
   border-radius: 15px;
   
+  
 }
 @media screen and (max-width: 800px) {
     .joke{
@@ -45,5 +46,6 @@ export default {
   line-height: 20px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   border-radius: 15px;
+  font-weight: 700;
 }
 </style>
