@@ -8,8 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^4.5.2",
-    "oxc-parser": "^0.148.0"
+    "nuxt": "^4.5.2"
   },
   "dependencies": {
     "bun": "^1.4.1"
