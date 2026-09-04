@@ -9,37 +9,8 @@
   </main>
 </template>
 
-<script>
-import Joke from '../../components/Joke'
-export default {
-  components: { Joke },
-    data(){
-        return{
-            jokes: []
-
-        }
-    },
-    async created(){
-        const config = {
-            headers: {
-                'Accept': 'application/json'
-            }
-        }
-        try{
-        const res = await useFetch("https://icanhazdadjoke.com/search", {
-            headers: {'Accept': 'application/json'}
-        });
-
-        this.jokes = res.data._rawValue.results
-        }catch(err){
-            console.log(err);
-        }
-
-    }
-}
-</script>
-
 <script setup>
+import Joke from '../../components/Joke.vue'
 useHead({
   title: 'Bad Dad Jokes - Wrobot',
   meta: [{
@@ -47,6 +18,12 @@ useHead({
     content: 'If you are seeing this, maybe I should have typed something here.'
   }]
 })
+const { data } = await useFetch('https://icanhazdadjoke.com/search', {
+  headers: { 'Accept': 'application/json' }
+})
+
+// Safely extract the joke list
+const jokes = computed(() => data.value?.results || [])
 </script>
 
 <style>
