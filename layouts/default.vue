@@ -6,8 +6,8 @@
     <AppHeader/>
     <slot />
     <footer class="pagecontent">
-      <h3>You have reached the end!</h3>
-      <p>I'm always open for DM's on Mastodon, and you can mail me at contact@wrobot.nl.eu.org.</p>
+      <h3>You have reached the end.</h3>
+      <p>Check out my socials and feel free to reach out on mastodon or twitter if you have any questions or ideas!</p>
       <ul class="buttonlist">
         <li><a rel="me" href="https://wrobot.itch.io" class="button">My Itch</a></li>
         <li><a rel="me" href="https://mastodon.gamedev.place/@Wrobot" class="button">My Mastodon</a></li>
@@ -38,7 +38,7 @@ export default {
   body{
     margin: 0;
   }
-  p{
+  p,i{
     font-family: "rubik", sans-serif;
     font-weight: 400;
     color: rgb(54, 54, 54);
