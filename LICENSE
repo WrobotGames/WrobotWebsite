@@ -7,7 +7,7 @@ Code — Apache 2.0 License (LICENSE-APACHE)
 Assets — CC BY-NC-ND 4.0 License
 
     To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/
-    This license applies to all files inside /public, exept for the Godot files.
+    This license applies to all files inside /public, except for the Godot files. /public/godot/*.pck is considered an asset.
 
 Godot — MIT License (LICENSE-MIT)
 
