@@ -3,6 +3,7 @@
     <h1>About Wrobot.nl.eu.org</h1>
     <p>Font licensed under the open font license. Banner was made by me (Jungle Demo)</p>
     <p>This website was built with Nuxt.js, it was not vibecoded and yeah the url is kinda sketchy, but it works.</p>
+    <p>Information about the licensing of this website can be found on the Github repo.</p>
     <i>I don't really have anything else to say, so here is...</i>
     <h2>A Lorem Ipsum article</h2>
    
