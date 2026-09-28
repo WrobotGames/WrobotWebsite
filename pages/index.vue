@@ -1,5 +1,6 @@
 <template>
-<main class='pagecontent'>
+<main>
+  <article class='pagecontent'>
     <h1>Someone Who Makes Stuff</h1> 
     <i>Or at least, sometimes.</i>
     <p >Hi! I'm <b>Wrobot</b>, I'm from the Netherlands and I make stuff. "<i>What kind of stuff?</i>", you may ask. Well, something like this website or a demo for a game engine. If it has anything to do with software, then I'm most likely going to be interested.</p>
@@ -9,9 +10,9 @@
       <li><b>Floating Windows UI:</b> A demo showcasing the flexibility of Godot's ui systems, and how it can be used for non-game software, available om this website (the Godot button)</li>
       <li><b>This website 🙃:</b> Tipping my toes into web development... I always want to learn something new!</li>
     </ul>
+  </article>
 </main>
 </template>
-
 
 <script setup>
 useHead({

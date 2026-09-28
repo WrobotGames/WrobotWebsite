@@ -116,15 +116,15 @@ export default {
 /* Page Transitions */
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.2s, transform 0.2s;
 }
 
 .page-leave-to{
-  transform: scale(1.05, 1);
+  transform: scale(0.99, 1);
   opacity: 0;
 }
 .page-enter-from {
-  transform: scale(0.95, 1);
+  transform: scale(0.98, 1);
   opacity: 0;
 }
 </style>
